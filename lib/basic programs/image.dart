@@ -11,11 +11,11 @@ class Images extends StatelessWidget {
 
         appBar: AppBar(
           centerTitle: true,
-          title: Text('Flutter layout demo')),
+          title: const Text('Flutter layout demo')),
         body: Column(
           children: [
             Image.asset('assets/a.png'),
-            ListTile(
+            const ListTile(
               title: Text('Oeschinen Lake Campground',style: TextStyle(
               fontWeight: FontWeight.bold)),
               subtitle: Text('Kandersteg,Swizerland'),
@@ -29,15 +29,15 @@ class Images extends StatelessWidget {
             
             
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
               Icon(Icons.phone,color:Colors.purple),
               Icon(Icons.near_me,color:Colors.purple),
               Icon(Icons.share,color:Colors.purple),
             ],),
-            SizedBox(height:10),
-            Row(
+            const SizedBox(height:10),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text('CALL',style:TextStyle(color:Colors.purple)),
@@ -45,9 +45,9 @@ class Images extends StatelessWidget {
                 Text('SHARE',style:TextStyle(color:Colors.purple)),
               ],
             ),
-            SizedBox(height:10),
-            Padding(
-              padding: const EdgeInsets.all(20.0),
+            const SizedBox(height:10),
+            const Padding(
+              padding: EdgeInsets.all(20.0),
               child: Text('Lake Oeschinen lies at the foot of the Blüemlisalp in the '
               'Bernese Alps. Situated 1,578 meters above sea level, it '
               'is one of the larger Alpine Lakes. A gondola ride from '
